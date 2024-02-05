@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_title">25dp</dimen>
+    <dimen name="output">16dp</dimen>
+    <dimen name="edit_text_size">20dp</dimen>
+    <dimen name="spinner_text_size">20dp</dimen>
+    <dimen name="radio_button_header_text_size">23dp</dimen>
+
+</resources>

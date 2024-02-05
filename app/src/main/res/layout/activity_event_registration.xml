@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".EventRegistrationActivity">
+
+    <TextView
+        android:id="@+id/textViewEventRegistrationApp"
+        style="@style/title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <EditText
+        android:id="@+id/editTextEventName"
+        style="@style/edit_text_style"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/event_name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEventRegistrationApp" />
+
+    <EditText
+        android:id="@+id/editTextEventDate"
+        style="@style/edit_text_style"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/event_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEventName" />
+
+    <EditText
+        android:id="@+id/editTextEventOrganizer"
+        style="@style/edit_text_style"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/event_organizer"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEventDate" />
+
+    <Spinner
+        android:id="@+id/spinnerCity"
+        style="@style/edit_text_style"
+        android:layout_width="374dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/cities"
+        android:prompt="@string/event_city"
+        android:spinnerItemStyle="@style/spinner_style"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEventOrganizer" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCorporate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/corporate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCity" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNotForProfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/not_for_profit"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxCorporate"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCity" />
+
+    <CheckBox
+        android:id="@+id/checkBoxEducational"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="@string/educational"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxNotForProfit"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCity" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/radio_button_header_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/event_format"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCorporate" />
+
+    <RadioGroup
+        android:id="@+id/rdbGpEventFormat"
+        android:layout_width="150dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxEducational">
+
+        <RadioButton
+            android:id="@+id/radioButtonInPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/in_person" />
+
+        <RadioButton
+            android:id="@+id/radioButtonOnline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/online" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="117dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/button_color"
+        android:text="@string/register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="117dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/button_color"
+        android:text="@string/reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toEndOf="@+id/buttonRegister"
+        app:layout_constraintTop_toBottomOf="@+id/rdbGpEventFormat" />
+
+    <TextView
+        android:id="@+id/textViewOutput"
+        android:layout_width="357dp"
+        android:layout_height="118dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegister"
+        app:layout_constraintVertical_bias="0.52" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

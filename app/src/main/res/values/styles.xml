@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="title_style">
+        <item name="android:textColor">
+            @color/title_color
+        </item>
+        <item name="android:textSize">
+            @dimen/app_title
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+
+    <style name="edit_text_style">
+        <item name="android:background">
+            @color/white
+        </item>
+        <item name="android:textAlignment">
+                center
+        </item>
+        <item name="android:textSize">
+            @dimen/edit_text_size
+        </item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:background">
+            @color/white
+        </item>
+        <item name="android:textAlignment">
+            center
+        </item>
+        <item name="android:textSize">
+            @dimen/spinner_text_size
+        </item>
+    </style>
+
+    <style name="radio_button_header_style">
+        <item name="android:textColor">
+            @color/title_color
+        </item>
+        <item name="android:textSize">
+            @dimen/radio_button_header_text_size
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+
+</resources>

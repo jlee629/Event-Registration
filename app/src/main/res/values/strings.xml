@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">JUNGYULEE_COMP304Sec001_Lab01_Ex02</string>
+    <string name="app_title">Event Registration App</string>
+    <string name="event_name">Enter Event Name</string>
+    <string name="event_date">Enter Event Date</string>
+    <string name="event_organizer">Enter Event Organizer/Company</string>
+    <string name="event_city">Choose Event City</string>
+
+    <string-array name="cities">
+        <item>Toronto</item>
+        <item>Montreal</item>
+        <item>Vancouver</item>
+        <item>Calgray</item>
+    </string-array>
+
+    <string name="corporate">Corporate</string>
+    <string name="not_for_profit">Not_for_Profit</string>
+    <string name="educational">Educational</string>
+
+    <string name="event_format">EVENT FORMAT: </string>
+    <string name="in_person">IN-PERSON</string>
+    <string name="online">ON-LINE</string>
+
+    <string name="register">REGISTER</string>
+    <string name="reset">RESET</string>
+</resources>
